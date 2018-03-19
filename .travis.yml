@@ -26,8 +26,8 @@ env:
     - WEBTILES=1 BUILD_ALL=1
 git:
     submodules: false
-install: perl .travis/deps.pl
-script: perl .travis/build.pl
+install: true
+script: true
 notifications:
     email:
         on_success: change
