@@ -3,6 +3,10 @@ compiler:
     - clang
     - gcc
 sudo: required
+addons:
+  apt:
+    packages:
+      - traceroute
 before_install:
     - sudo apt-get update --option Acquire::Retries=100 --option Acquire::http::Timeout="60"
     - host -v ppa.launchpad.net
